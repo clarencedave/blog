@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout';
-
 function BlogPost(props) {
   const post = props.data.markdownRemark;
   const { title } = post.frontmatter;
   return (
       <Layout>
+        
           <div>
               <h1>{title}</h1>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -23,6 +23,7 @@ query PostQuery($slug: String!) {
      frontmatter {
       title
       description
+      
      }
  }
 }`

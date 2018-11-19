@@ -17,6 +17,7 @@ const IndexPage = (props) => {
         </Link>
       ))}
     </Layout>
+    
   )
 }
 
