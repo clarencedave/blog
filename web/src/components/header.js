@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import logo from '../images/seattle-angel-logo.png'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'black',
+      background: '#000080',
       marginBottom: '1.45rem',
     }}
   >
@@ -31,6 +31,27 @@ const Header = ({ siteTitle }) => (
         
       </h1>
     </div>
+
+<div class="header">
+  <a   href="/" >
+  <img src= {logo} alt="Angel"/>
+  </a>
+  
+
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  
+  <div class="profit">
+  <p>A non-profit corporation. Sparking the flame of angel investing in the Northwest</p>
+  </div>
+</div>
+
+
+
+
   </div>
   
 )
